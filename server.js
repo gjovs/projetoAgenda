@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 
 mongoose.connect(process.env.CONNECTIONSTRING, {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
     })
     .then(() => {
         console.log('conectado a base de dados')
