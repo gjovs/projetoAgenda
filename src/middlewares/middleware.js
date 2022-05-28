@@ -10,7 +10,6 @@ exports.checkCsrfError = (err, req, res, next) => {
     }
 }
 exports.csrfMiddleware = (req, res, next) => {
-    console.log('enviando os tokens')
     res.locals.csrfToken = req.csrfToken()
     next()
 }
